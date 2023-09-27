@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>E-Groceries</title>
+</head>
+<body>
+    <header>
+    
+        <h2 class="logo">Nama Perusahaan</h2>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home-container">Home</a></li>
+                <li><a href="#Package">Our Package</a></li>
+                <li><a href="#order-form">Call us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- banner auto slide show -->
+    <section class="home-container">
+        <div class="judul-pkt">
+            <h2>Set Paket</h2>
+            <p>Harga lebih terjaukan, kualitas tetap yang</p>
+        </div>
+        <div class="menu-container">
+            <div class="menu-slider">
+                <div class="menu-item">
+                    <img src="menu1.jpg" alt="Paket 1">
+                    <h2>Paket Favorit 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="menu2.jpg" alt="Paket 2">
+                    <h2>Paket Favorit 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner auto slide show -->
+
+    <section class="Package">
+        <div class="tit"><h1>Our Package</h1></div>
+        <div class="column">
+            <h2><img src="icon"> bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+        <div class="column">
+            <h2><img src="icon"> bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+        <div class="column">
+            <h2><img src="icon"> bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+        <div class="column">
+            <h2><img src="icon"> Bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+        <div class="column">
+            <h2><img src="icon"> Bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+        <div class="column">
+            <h2><img src="icon"> Bahan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+        </div>
+       
+    </section>
+
+    <!-- list barang -->
+    <section class="container">
+        <div class="barang">
+            <img src="gambar_barang1.jpg" alt="Barang 1">
+            <h2>Barang 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            <button onclick="tambahKeKeranjang('Barang 1')">Tambah ke Keranjang</button>
+        </div>
+    
+        <div class="barang">
+            <img src="gambar_barang2.jpg" alt="Barang 2">
+            <div class="description">
+                <h2>Nama Barang 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <button onclick="tambahKeKeranjang('Barang 2')">Tambah ke Keranjang</button>
+        </div>
+    </section>
+    <!-- list barang -->
+
+    <!-- Call us -->
+    <section class="form-pesanan">
+        <h2>Call us</h2>
+        <form id="order-form" onsubmit="return validasiForm()">
+            <input type="text" id="nama" placeholder="Nama" required><br><br>
+            <input type="email" id="email" placeholder="Email" required><br><br>
+            <select id="pilihan-barang" required>
+                <option value="">Pilih Barang</option>
+                <option value="Barang 1">Barang 1</option>
+                <option value="Barang 2">Barang 2</option>
+                <option value="Barang 3">Barang 3</option>
+            </select><br><br>
+            <button type="submit">Pesan</button>
+        </form>
+    </section>
+    <!-- Call us -->
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer container">
+          <div class="brand">
+            <h1><span>Akun</span> Medsos Janlup:V<span></span></h1>
+          </div>
+          <h2>Your Complete Web Solution</h2>
+          <div class="social-icon">
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+            </div>
+          </div>
+          <p>By Rendi Julianto</p>
+        </div>
+      </section>
+      <!-- footer -->
+    <div id="response"></div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
